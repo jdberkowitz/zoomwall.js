@@ -57,15 +57,15 @@ Add the `zoomwall` class to the container element. Include high resolution photo
 <div id="zoomwall" class="zoomwall">
 <figure class="view view-tenth" >
     <img class="gallery-image" src="./image_1_small.jpg" data-highres="./image_1.jpg" alt="#">
-    <span class="mask"><h2>TitleS</h2>
+    <dov class="mask"><h2>TitleS</h2>
     <p>Description</p>
-    <a href="#" class="info">LEARN MORE</a></span>
+    <a href="#" class="info">LEARN MORE</a></div>
 </figure>
 <figure class="view view-tenth" >
     <img class="gallery-image" src="./image_2_small.jpg" data-highres="./image_2.jpg" alt="#">
-    <span class="mask"><h2>TitleS</h2>
+    <div class="mask"><h2>TitleS</h2>
     <p>Description</p>
-    <a href="#" class="info">LEARN MORE</a></span>
+    <a href="#" class="info">LEARN MORE</a></div>
 </figure>    
 </div>
 ```
