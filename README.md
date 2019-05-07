@@ -65,7 +65,7 @@ Run `zoomwall.create()` on the container element (`#zoomwall` in this example), 
 
 ```javascript
 window.onload = function() {
-    zoomwall.create(document.getElementById('zoomwall'));
+    zoomwall.create(document.getElementById('zoomwall'), true);
 };
 ```
 
