@@ -3,19 +3,21 @@ zoomwall.js
 zoomwall.js is a content-focused photo gallery using a horizontal masonry layout that scales up in lightbox mode. This variation adds support for CSS overlay information including a link for SEO optimization. 
 
 ##TODO
-`-Add mobile support for overlay`
 ```
-`-Move overlay to bottom caption on enlarge`
+-Add mobile support for overlay
 ```
-`-Debug height fit issues on image sets with large differences in image dimensions`
+-Move overlay to bottom caption on enlarge
 ```
-`-Prevent enlarge method on link click`
+-Debug height fit issues on image sets with large differences in image dimensions
 ```
-`-Add support for emtpy overlay information`
+-Prevent enlarge method on link click
 ```
-`-Add support for other overlay animations`
+-Add support for emtpy overlay information
 ```
-`-Add image Schema generation `
+-Add support for other overlay animations
+```
+-Add image Schema generation 
+```
 
 
 Visit [ericleong.github.io/zoomwall.js](http://ericleong.github.io/zoomwall.js) for a demo of the orignal.
