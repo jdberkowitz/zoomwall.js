@@ -1,8 +1,19 @@
 zoomwall.js
 ===========
-zoomwall.js is a content-focused photo gallery using a horizontal masonry layout that scales up in lightbox mode.
+zoomwall.js is a content-focused photo gallery using a horizontal masonry layout that scales up in lightbox mode. This variation adds support for CSS overlay information including a link. 
+
+##TODO
+-Add mobile support for overlay
+-Move overlay to bottom caption on enlarge
+-Debug height fit issues on image sets with large differences in image dimensions
+-Prevent enlarge method on link click
+-Add support for emtpy overlay information
+-Add support for other overlay animations
+
 
 Visit [ericleong.github.io/zoomwall.js](http://ericleong.github.io/zoomwall.js) for a demo of the orignal.
+
+Visit [https://codepen.io/JBerkowitzDesigns/pen/dEooQR](https://codepen.io/JBerkowitzDesigns/pen/dEooQR) for a demo pen of this fork.
 
 [![CircleCI](https://circleci.com/gh/ericleong/zoomwall.js/tree/master.svg?style=svg)](https://circleci.com/gh/ericleong/zoomwall.js/tree/master)
 
@@ -29,7 +40,7 @@ First, add a reference to `zoomwall.js` and `zoomwall.css` in your HTML file, li
 <script type="text/javascript" src="zoomwall.js"></script>
 ```
 
-Add the `zoomwall` class to the container element. Include high resolution photos using the `data-highres` attribute of each `<img>` tag.
+Add the `zoomwall` class to the container element. Include high resolution photos using the `data-highres` attribute of each `<img>` tag. 
 
 ```html
 <div id="zoomwall" class="zoomwall">
