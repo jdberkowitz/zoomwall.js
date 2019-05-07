@@ -4,6 +4,8 @@ zoomwall.js is a content-focused photo gallery using a horizontal masonry layout
 
 ##TODO
 ```
+-Debug Firefox and IE Edge support (line breaking perhaps due to box-resizing)
+```
 -Add mobile support for overlay
 ```
 -Move overlay to bottom caption on enlarge
