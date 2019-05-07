@@ -32,9 +32,19 @@ First, add a reference to `zoomwall.js` and `zoomwall.css` in your HTML file, li
 Add the `zoomwall` class to the container element. Include high resolution photos using the `data-highres` attribute of each `<img>` tag.
 
 ```html
-<div id="gallery" class="zoomwall">
-    <img src="./images/01_lowres.jpg" data-highres="./images/01_highres.jpg" />
-    <img src="./images/02_lowres.jpg" data-highres="./images/02_highres.jpg" />
+<div id="zoomwall" class="zoomwall">
+<figure class="view view-tenth" >
+    <img class="gallery-image" src="./image_1_small.jpg" data-highres="./image_1.jpg" alt="#">
+    <span class="mask"><h2>TitleS</h2>
+    <p>Description</p>
+    <a href="#" class="info">LEARN MORE</a></span>
+</figure>
+<figure class="view view-tenth" >
+    <img class="gallery-image" src="./image_2_small.jpg" data-highres="./image_2.jpg" alt="#">
+    <span class="mask"><h2>TitleS</h2>
+    <p>Description</p>
+    <a href="#" class="info">LEARN MORE</a></span>
+</figure>    
 </div>
 ```
 
