@@ -1,6 +1,6 @@
 /*
-https://github.com/jdberkowitz
-Orginal from
+https://github.com/jdberkowitz/zoomwall.js
+Adapted from
 https://github.com/ericleong/zoomwall.js/
 zoomwall.js
 
@@ -93,17 +93,14 @@ var zoomwall = {
     resizeRow: function(row, width) {
 
 
-		if (row && row.length > 1) {
-			for (var i in row) {
-
-				row[i].style.width = (parseInt(window.getComputedStyle(row[i]).width, 10) / width * 100) + '%';
-				row[i].style.height = 'auto';
-				row[i].firstElementChild.style.width = '100%';
-				row[i].firstElementChild.style.height = 'auto';
-			}
-		}
-		
-	},
+      if (row && row.length > 1) {
+        for (var i in row) {
+          row[i].style.width = (parseInt(window.getComputedStyle(row[i]).width, 10) / width * 100) + '%';
+          row[i].style.height = 'auto'; 
+          row[i].firstElementChild.style.width = '100%';
+        };        
+      }   		
+	}, 
     
 
 	calcRowWidth: function(row) {
@@ -129,6 +126,7 @@ var zoomwall = {
 					
 				} else if (block.offsetTop != top) {
 					zoomwall.resizeRow(row, zoomwall.calcRowWidth(row));
+          
 
 					row = [];
 					top = block.offsetTop;
@@ -139,6 +137,7 @@ var zoomwall = {
 		}
 
 		zoomwall.resizeRow(row, zoomwall.calcRowWidth(row));
+        
 	 	
 	},
 
@@ -393,4 +392,4 @@ var zoomwall = {
 	}
 };
 
-
+};
