@@ -1,3 +1,4 @@
+
 /*
 zoomwall.css
 
@@ -55,6 +56,135 @@ SOFTWARE.
 	opacity: 0.3;
 }
 
-.zoomwall.lightbox img.active {
+.zoomwall.lightbox figure.active img {
 	opacity: 1;
+}
+/*hide mask information on enlargement*/
+figure.view.view-tenth.active .mask {
+    display: none;
+}
+
+
+
+/*information Overlay adapted from Jacob Stone Design @Copepen*/
+
+#zoomwall {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* generic css */
+
+.view {
+    margin: 0px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    float: left;
+}
+
+.view .mask,
+.view .content {
+  position: absolute;
+  overflow: hidden;
+  top:0;
+  left: 0;
+  width:100%;
+  padding: 10px 0;
+}
+
+
+.view h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-family: Raleway, serif;
+  padding: 10px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  margin: 20px 0 0 0
+}
+
+.view p {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-size: 14px;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center
+}
+
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+  font-size: 12px;
+}
+
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+
+
+/*3*/
+
+.view-tenth img {
+  transform: scaleY(1);
+  transition: all .7s ease-in-out;
+}
+
+.view-tenth .mask {
+  background-color: rgba(255, 231, 179, 0.3);
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.view-tenth h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  margin: 20px 40px 0px 40px;
+  transform: scale(0);
+  color: #333;
+  transition: all 0.5s linear;
+  opacity: 0;
+}
+
+.view-tenth p {
+  color: #333;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+
+.view-tenth a.info {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+}
+
+.view-tenth:hover img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: .4;
+}
+
+.view-tenth:hover .mask {
+  opacity: 1;
+}
+
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.info {
+  transform: scale(1);
+  opacity: 1;
 }
