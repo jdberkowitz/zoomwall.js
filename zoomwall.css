@@ -32,7 +32,7 @@ SOFTWARE.
 }
 
 .zoomwall img {
-	height: 15vw;
+	height: 20vw;
 	opacity: 1;
 	vertical-align: top;
 	
@@ -75,6 +75,9 @@ figure.view.view-tenth.active .mask {
 
 
 /* generic css */
+div.mask {
+    height: 100%;
+}
 
 .view {
     margin: 0px;
