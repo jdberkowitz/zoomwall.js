@@ -61,11 +61,11 @@ Add the `zoomwall` class to the container element. Include high resolution photo
 
 ### javascript
 
-Run `zoomwall.create()` on the container element (`#gallery` in this example), after they have loaded.
+Run `zoomwall.create()` on the container element (`#zoomwall` in this example), after they have loaded.
 
 ```javascript
 window.onload = function() {
-    zoomwall.create(document.getElementById('gallery'));
+    zoomwall.create(document.getElementById('zoomwall'));
 };
 ```
 
