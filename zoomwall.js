@@ -391,6 +391,4 @@ var zoomwall = {
 	}
 };
 
-window.onload = function() {
-    zoomwall.create(document.getElementById('zoomwall'), true);
-};
+
