@@ -1,4 +1,6 @@
 /*
+https://github.com/jdberkowitz
+Orginal from
 https://github.com/ericleong/zoomwall.js/
 zoomwall.js
 
