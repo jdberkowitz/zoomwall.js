@@ -2,7 +2,7 @@ zoomwall.js
 ===========
 zoomwall.js is a content-focused photo gallery using a horizontal masonry layout that scales up in lightbox mode.
 
-Visit [ericleong.github.io/zoomwall.js](http://ericleong.github.io/zoomwall.js) for a demo.
+Visit [ericleong.github.io/zoomwall.js](http://ericleong.github.io/zoomwall.js) for a demo of the orignal.
 
 [![CircleCI](https://circleci.com/gh/ericleong/zoomwall.js/tree/master.svg?style=svg)](https://circleci.com/gh/ericleong/zoomwall.js/tree/master)
 
