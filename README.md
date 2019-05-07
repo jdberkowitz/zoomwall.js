@@ -19,7 +19,7 @@ zoomwall.js is a content-focused photo gallery using a horizontal masonry layout
 -Add support for other overlay animations
 ```
 -Add image Schema generation 
-```
+
 
 
 Visit [ericleong.github.io/zoomwall.js](http://ericleong.github.io/zoomwall.js) for a demo of the orignal.
